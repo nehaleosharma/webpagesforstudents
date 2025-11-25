@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Rule Precedence & Specificity</title>
+
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="exp9.css">
+
+  <!-- Internal CSS -->
+  <style>
+    p { color: brown; }         /* Internal element selector */
+    .text { color: purple; }    /* Internal class selector */
+    #special { color: orange; } /* Internal ID selector */
+  </style>
+</head>
+<body>
+
+  <h2>CSS Rule Precedence Demo</h2>
+
+  <!-- 1- Element selector only -->
+  <p>This paragraph uses <b>element</b> selector only.</p>
+
+  <!-- 2️- Class selector -->
+  <p class="text">This paragraph uses a <b>class</b> selector.</p>
+
+  <!-- 3️- ID selector -->
+  <p id="special">This paragraph uses an <b>ID</b> selector.</p>
+
+  <!-- 4️- Inline style overrides all -->
+  <p id="special" class="text" style="color: pink;">
+    This paragraph has <b>inline CSS</b> (highest priority).
+  </p>
+
+</body>
+</html>

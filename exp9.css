@@ -1,0 +1,12 @@
+/*  External CSS */
+p {
+  color: blue;            /* Element selector */
+}
+
+.text {
+  color: green;           /* Class selector */
+}
+
+#special {
+  color: red;             /* ID selector */
+}
